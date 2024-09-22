@@ -1,0 +1,45 @@
+{
+    "skills": [
+        "html",
+        "css",
+        "SQL", 
+        "Typescript",
+        "Javascript",
+        "Mongodb",
+        "Java",
+        "PosgreSQL",
+        "AWS", 
+        "React",
+        "Popcorn"
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "positionTitle": "FULL STACK DEVELOPER / TECH LEAD",
+            "projectTitle": "Refy: AI powered mortgage broker",
+            "skills": [
+                "AWS", 
+                "HTML", 
+                "C++", 
+                "Python"],
+            "description": "Assembled and lead a team of 8 developers to create core features and integrate third party APIs. Implemented CI/CD pipeline with Typescript type-checking, database migration, code linting and preview deploys.",
+            "image_src": "https://www.aaspinwall.com/projects/refy/screen.png"
+        },
+        {
+            "id": 2,
+            "positionTitle": "position title",
+            "projectTitle": "project title",
+            "skills": [
+                "Java", 
+                "VisualStudio", 
+                "Tableu"
+            ],
+            "description": "description",
+            "image_src": "https://www.aaspinwall.com/projects/refy/screen.png"
+        }
+        
+
+    ]
+
+}
+
