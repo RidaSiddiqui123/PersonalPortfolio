@@ -1,7 +1,16 @@
+import image from "./image.PNG";
 export default function HeroSection() {
     return (
         <section id="heroSection" className="hero-section">
-            
+            <div className="hero-section-img-box">
+                <div className="name">
+                    <span className="hero-section-name-1">RI</span>
+                    <span className="hero-section-name-2">DA</span>
+                  
+                </div>
+                
+                
+            </div>
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
                     <p className="section-title">Hello, I'm </p> 
@@ -18,9 +27,7 @@ export default function HeroSection() {
                 </div>
                 <button className="btn btn-resume">Download Resume/CV</button>
             </div> 
-            <div className="hero-section-img">
-                <img src="https://github.com/Ade-mir/react-js-personal-portfolio/blob/main/public/img/hero_img.png?raw=true"></img>
-            </div>
+        
             
             
         </section>
