@@ -684,7 +684,18 @@ background: var(--gradient-heading);
     
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  /*
+  background-color: green;
+  */
+  width: 100%;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
 
+}
 .contact-section-heading {
     background: var(--gradient-heading);
     background-clip: text;
@@ -695,16 +706,19 @@ background: var(--gradient-heading);
     
 }
 .contact-form-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 300px;
-    width: 40%;
+    
     row-gap: 32px;
+
 }
 
 .container {
     display: grid;
-    gap: 20px;
+    gap: 25px;
     grid-template-areas:
     "top1 top2"
     "middle1 middle1"
@@ -720,12 +734,16 @@ background: var(--gradient-heading);
 
 
 .contact-label {
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex: 1 0 0;
     width: 100%;  
     gap: 5px; 
+    font-size: 50px;
+    color: var(--light-blue);
+    
 }
 
 .contact-input {
@@ -735,7 +753,7 @@ background: var(--gradient-heading);
     align-items: center;
     align-self: stretch;
     /*border-radius: 8px;*/
-    border: 1.333px solid var(--light-blue);
+    border: 2px solid var(--light-blue);
     background: var(--white);
     resize: none;
 
@@ -743,16 +761,20 @@ background: var(--gradient-heading);
 
 .text-md {
     color: var(--navy);
-    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
 
 .container > div > button {
-    color: var(--white);
+  color: var(--light-blue);
     background-color: var(--primary);
-    border: 1px solid var(--primary);
+    border: 2px solid var(--light-blue);
+    padding: 3px 20px;
+    font-size: 14px;
+    transition: 0.3s;
     /*color: var(--white);
     background-color: var(--primary);
     background-image: linear-gradient(#f5a56f, #df3673);
@@ -762,14 +784,17 @@ background: var(--gradient-heading);
 
 .container > div > button:hover {
     color: var(--primary);
-    background-color: var(--white);
-    border: 1px solid var(--primary);
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-blue);
     
 }
 
+
 .contact-animation-container {
   display: flex;
-  
+  /*
+  background-color: red;
+  */
   align-items: flex-start;
   text-align: center;
   justify-content: left;
@@ -779,10 +804,11 @@ background: var(--gradient-heading);
 <div className="contact-animation-container">
                     <Lottie
                         animationData={animationData}
-                        loop={true}
+                        loop={false}
+                        autoplay={true}
                         style={{height: '500px', width: '500px'}}
                     />                     
-                </div> 
+                </div>
 */
 
 /* Contact Section Style Ends */
