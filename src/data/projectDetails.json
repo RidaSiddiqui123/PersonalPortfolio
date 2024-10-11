@@ -1,0 +1,90 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "pitch": "A web app that helps you find trendy and sustainable clothing on a budget. It'll help you not only save money but water!",
+            "image_src": "/images/jal2.png",
+            "link": "https://jarrv.onrender.com",
+            "technologies": [
+                "React", 
+                "JavaScript",
+                "Node.js",
+                "Django",
+                "Google Lens API",
+                "BeautifulSoup",
+                "Selenium",
+                "Dynamic Images",
+                "Render"
+            ],
+            "descriptions": [
+                {
+                    "title": "Purpose",
+                    "paragraph": "The concept for this project emerged during the 2024 VISA Climate Tech Hackathon, where the challenge was to envision a more sustainable future. Upon researching, we discovered that the fashion industry is the second largest polluter globally. According to Material Exchange, the industry’s use of harmful dyes, chemicals, and softening agents often results in polluted community waterways. Additionally, producing a single pair of jeans requires about 1,800 gallons of water, and 92 million tons of clothing are discarded annually.<br><br>Driven by these concerning statistics, we saw fashion recommerce as a practical solution to help reduce environmental waste. Our aim was to create a platform that allows users to shop for stylish, sustainable clothing, while also highlighting the environmental impact—specifically the amount of water saved— with every purchase, encouraging eco-conscious choices. We ultimately decided on building a website and browser extension to support this initiative. I believe that, over time, this platform can inspire more consumers to buy used clothing, reduce waste, and make a tangible difference. "                
+                },
+                {
+                    "title": "Process",
+                    "paragraph": "I initially had the idea to create a browser extension that would make it easier to find used clothing across various clothing websites. However, since none of us on the team had experience building extensions and given the limited time during the hackathon, we collectively decided to focus on developing a website instead. The website allows users to browse trending items from stores and provides links to similar recommerce clothing options.<br><br>To begin, I contributed to scraping data from clothing websites using Selenium and BeautifulSoup to gather relevant product information. We chose a small test sample of dresses from H&M to ensure the functionality worked correctly and stored this data in a Django database. Along with my team, I integrated SerpApi's Google Lens API, using it to compare H&M product images against Google’s results to find visually similar items. I worked on filtering these results to retrieve only recommerce store options, which we also stored in the database.<br><br>Once the backend was in place, I contributed to building the frontend using React, ensuring dynamic image loading and an intuitive user experience. The final product was deployed on Render."
+                },
+                {
+                    "title": "Plans",
+                    "paragraph": "This is an ongoing project that we are actively developing. As I mentioned earlier, the initial idea was to build a browser extension. Due to time constraints of the hackathon, we focused only on the website during but now we are actively developing the extension.<br><br>The browser extension offers greater versatility compared to the website since it can be used across any online clothing website. For example, if a consumer is viewing a dress on H&M, they can click on the extension, which will use the image and associated tags to find similar dresses on recommerce platforms like Poshmark or Depop.<br><br>That being said, we encountered a challenge with the Google Lens API. It restricts the amount of API calls per month, limiting our ability to scale and be accessible to a wider audience. Because of this, we are currently developing our own machine learning (ML) model tailored to identify similar clothing items. This will allow us to fine-tune our model specifically for clothing, providing more accurate results compared to Google Lens, which analyzes the entire image. Additionally, we’ll be able to utilize product tags to further enhance search precision."  
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "pitch": "Find your favorite movies and shows to watch on your free time. And leave reviews after you're done.",
+            "image_src": "/images/nowplaying2.png",
+            "link": "",
+            "technologies": [
+                "HTML/CSS", 
+                "JavaScript",
+                "Node.js",
+                "MongoDB",
+                "TMDB API",
+                "Express.js",
+                "CORS",
+                "CRUD Functionality"
+            ],
+            "descriptions": [
+                {
+                    "title": "Purpose",
+                    "paragraph": "This project began as a tutorial from FreeCodeCamp, aimed at teaching the basics of web development, including working with APIs, creating RESTful endpoints, and connecting to a database. I extended it further by refining the styling and integrating more features. The goal was to build a comprehensive film website, where users can find all the details about a movie in one place; from the poster and description to streaming options. I also added functionality for users to write and read movie reviews, enhancing the interactive experience."
+                },
+                {
+                    "title": "Process",
+                    "paragraph": "Developed the front end using HTML, CSS, and JavaScript to design and format the user interface. Integrated the TMDB API to dynamically fetch and display the latest movie and TV show data. <br><br>Built a backend REST API with MongoDB for storing movie reviews, leveraging Express.js to simplify the creation of URL endpoints for seamless interaction between the web server and the database. Implemented full CRUD (create, read, update, and delete operations) functionality for the backend."
+                },
+                {
+                    "title": "Problems and Plans",
+                    "paragraph": "One challenge I faced was figuring out how to integrate MongoDB and Restful APIs for storing and displaying user reviews. Currently, I'm working on making the website fully responsive so it can adapt to various devices, while also improving the overall styling to create a more visually appealing user experience."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "pitch": "Get personalized book recommendations for all you book lovers. Explore new favorites tailored to you!",
+            "image_src": "/images/nowplaying.png",
+            "link": "",
+            "technologies": [
+                "Flask", 
+                "Python",
+                "Pandas",
+                "Numpy",
+                "Sklearn",
+                "Bootstrap",
+                "Data Manipulation"
+            ],
+            "descriptions": [
+                {
+                    "title": "Purpose",
+                    "paragraph": "My interest in creating this website stemmed from a class I took, called Web Search and Recommender Systems. During the course, we explored how platforms like Netflix provide personalized recommendations and studied different models used in the systems. <br><br>I did some research and decided to build a website for book lovers that recommends books based on their reading history. I then developed a recommender system from scratch and integrated it into this website to enhance the user experience."
+                },
+                {
+                    "title": "Plans",
+                    "paragraph": "I'm currently optimizing the website for full responsiveness, ensuring it adjusts smoothly across different devices. Additionally, I'm refining the overall design to enhance visual appeal and improve the user experience. I am also working on deploying the website."
+                }
+            ]
+        }
+    ]
+}

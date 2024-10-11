@@ -1,11 +1,15 @@
+import Lottie from 'lottie-react';
+import animationData from '../../images/emailAnimation.json';
+
 export default function ContactMe() {
     return (
         <section id="contactSection" className="contact-section">
             <div className="contact-heading-container">
-                <p className="section-title">Get in Touch</p> 
-                <h1 className="contact-section-heading">Contact Me</h1>
+                <h1 className="contact-section-heading">Connect with Me</h1>
             </div>
+            
             <form className="contact-form-container">
+                
                 <div className="container">
                     <label htmlFor="first-name"
                     className="contact-label">
@@ -55,6 +59,7 @@ export default function ContactMe() {
                     </div>
 
                 </div>
+                
             </form>
         </section>
     )

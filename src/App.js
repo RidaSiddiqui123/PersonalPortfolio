@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Homescreen";
 import Navbar from "./Pages/Home/Navbar";
+import ProjectPage from "./Pages/Home/ProjectScreen/projectpage";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element= {<Home/>}></Route>
+            <Route path="/project/:id" element= {<ProjectPage/>}></Route>
             <Route path="*" element = {<div>404 Not Found</div>}></Route>
           </Routes>
         </div>

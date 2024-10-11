@@ -1,45 +1,59 @@
+
 {
     "skills": [
-        "html",
-        "css",
-        "SQL", 
-        "Typescript",
-        "Javascript",
-        "Mongodb",
-        "Java",
-        "PosgreSQL",
-        "AWS", 
+        "HTML",
+        "CSS",
+        "JavaScript",
         "React",
-        "Popcorn"
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Python",
+        "Bootstrap", 
+        "Node.js",
+        "Java",
+        "Beautiful Soup",
+        "Selenium"
     ],
     "projects": [
         {
             "id": 1,
-            "positionTitle": "FULL STACK DEVELOPER / TECH LEAD",
-            "projectTitle": "Refy: AI powered mortgage broker",
+            "positionTitle": "Full Stack Developer",
+            "projectTitle": "Jal: Recommerce Website",
             "skills": [
-                "AWS", 
-                "HTML", 
-                "C++", 
+                "React", 
+                "Javascript", 
+                "Django", 
                 "Python"],
-            "description": "Assembled and lead a team of 8 developers to create core features and integrate third party APIs. Implemented CI/CD pipeline with Typescript type-checking, database migration, code linting and preview deploys.",
-            "image_src": "https://www.aaspinwall.com/projects/refy/screen.png"
+            "description": "Collaborated with a team of 3 developers to create an intuitive website which showcases trending but sustainable clothing. Scraped multiple clothing and recommerce stores, while integrating API's. Overall, this web app aims to help you protect the environment while ensuring you don't break the bank.",
+            "image_src": "/images/jal1.png"
         },
         {
             "id": 2,
-            "positionTitle": "position title",
-            "projectTitle": "project title",
+            "positionTitle": "Full Stack Developer (Personal)",
+            "projectTitle": "Now Playing",
             "skills": [
-                "Java", 
-                "VisualStudio", 
-                "Tableu"
+                "MongoDB", 
+                "React", 
+                "JavaScript"
             ],
-            "description": "description",
-            "image_src": "https://www.aaspinwall.com/projects/refy/screen.png"
+            "description": "Designed a user-friendly website to allow easy access to movie descriptions and streaming options. Incorporated TMDB's API, as well as created a backend API using MongoDB, allowing users to write movie reviews.",
+            "image_src": "/images/nowplaying.png"
+        },
+        {
+            "id": 3,
+            "positionTitle": "Full Stack Developer (Personal)",
+            "projectTitle": "Book Lover",
+            "skills": [
+                "Python", 
+                "Bootstrap", 
+                "Flask"
+            ],
+            "description": "Created a Flask website for book lovers to get personalized book recommendations. Utilized an item-based collaborative filtering approach, a method used by Netflix, to give users recommendations based on previous books they read.",
+            "image_src": "/images/nowplaying.png"
         }
-        
-
     ]
 
 }
+
 
