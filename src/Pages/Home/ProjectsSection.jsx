@@ -22,7 +22,7 @@ export default function ProjectsSection() {
             </div>
             <div className="projects-section-container">
                 {data.projects.map((item, index) => (
-                    <div key={index} className="projects-section-card">
+                    <div key={index} className={`projects-section-card ${item.id % 2 === 1 ? "default" : "reverse"}`}>
                         <div className="projects-section-card-content">
                             <div className="projects-section-skills-container">
                                 {item.skills.map((skill, index) => (
@@ -35,22 +35,11 @@ export default function ProjectsSection() {
                             <h2 className="projects-section-title">{item.projectTitle}</h2>
                             
                             <p className="projects-section-description">{item.description}</p>
-                            <button className="btn btn-viewProject" onClick={() => routeToProjectPage(item.id)}>View Project</button>
+                            <button className="btn btn-viewProject" onClick={() => routeToProjectPage(item.id)}>Explore Project</button>
                         </div>
-                        <div className="projects-section-img"
-                            onMouseEnter={() => setIsHovered(index)}
-                            onMouseLeave={() => setIsHovered(null)} 
-                            >
-                            <img src = {item.image_src}></img>
-                            {isHovered === index && (
-                                <div className="image-overlay">
-                                    <a href="https://www.linkedin.com/in/rida-siddiqui-cs/" target='_blank'>
-                                        
-                                    </a>
-                                    
-                                </div>
-                            )}
-                              
+                        <div className="projects-section-img">
+                            <img src = {item.image_src} onClick={() => routeToProjectPage(item.id)}></img>
+                            
                         </div>
 
 

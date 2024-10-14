@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../../..//images/hourglassAnimation.json';
+import animationData from '../../../images/hourglassAnimation.json';
 import { useState, useEffect } from 'react';
 import { useParams} from 'react-router-dom';
 import { useLocation} from 'react-router-dom';

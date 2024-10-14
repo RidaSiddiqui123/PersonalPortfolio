@@ -8,7 +8,7 @@ export default function ContactMe() {
     const [showPlaceholder, setShowPlaceholder] = useState(false);
 
     const handleClick = () => {
-        setIsAnimationTime(true);
+        
     }
 
     const handleAnimationComplete = () => {
@@ -22,6 +22,14 @@ export default function ContactMe() {
         }, 1000);
         
     }
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("submitted");
+        setIsAnimationTime(true);
+
+        
+    }
 
     return (
         <section id="contactSection" className="contact-section">
@@ -29,14 +37,14 @@ export default function ContactMe() {
                 <h1 className="contact-section-heading">Connect with Me</h1>
             </div>
             <div className="contact">
-                <form className="contact-form-container">
+                <form className="contact-form-container" onSubmit = {handleSubmit}>
                     {isAnimationTime ? (
                         <div className="contact-animation-container">
                         <Lottie
                             animationData={animationData}
                             loop={false}
                             autoplay={true}
-                            style={{height: '500px', width: '500px'}}
+                            style={{height: '476.5px', width: '500px'}}
                             onComplete={handleAnimationComplete}
                         />                     
                     </div>
@@ -44,7 +52,7 @@ export default function ContactMe() {
                         <div>
                             {showPlaceholder ? (
                                 <div
-                                    style={{height: '475px'}}>
+                                    style={{height: '476.5px', color: 'blue'}}>
                                     
                                 </div>
                             ) : (
@@ -57,7 +65,7 @@ export default function ContactMe() {
                                             className="contact-input text-md"
                                             name="first-name"
                                             id="first-name"
-                                            placeholder="First Name"
+                                            //placeholder="First Name"
                                             required/>
                                     </label>
                                     <label htmlFor="last-name"
@@ -68,18 +76,18 @@ export default function ContactMe() {
                                             className="contact-input text-md"
                                             name="last-name"
                                             id="last-name"
-                                            placeholder="Last Name"
+                                            //placeholder="Last Name"
                                             required/>
                                     </label>
                                     <label htmlFor="email"
                                     className="contact-label">
-                                        <span className="text-md">Email</span>
+                                        <span className="text-md">Email Address</span>
                                         <input 
                                             type="email"
                                             className="contact-input text-md"
                                             name="email"
                                             id="email"
-                                            placeholder="Email"
+                                            //placeholder="@gmail.com"
                                             required/>
                                     </label>
                                     <label htmlFor="message"
@@ -89,11 +97,11 @@ export default function ContactMe() {
                                             className="contact-input text-md"
                                             id="message"
                                             rows="8"
-                                            placeholder="Type your message..."
+                                            //placeholder="Type your message..."
                                             required/>
                                     </label>
                                     <div>
-                                        <button className="btn contact-label-btn" onClick={handleClick}>Submit</button>
+                                        <button type="submit" className="btn contact-label-btn" >Submit</button>
                                     </div>
                                 </div>
                             )}
