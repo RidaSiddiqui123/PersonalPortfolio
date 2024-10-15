@@ -24,11 +24,22 @@ export default function ContactMe() {
     }
     
     const handleSubmit = (e) => {
+        const form = document.getElementById("form");
         e.preventDefault();
         console.log("submitted");
         setIsAnimationTime(true);
 
-        
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "/personalPortfolio/contact.php", true);
+        xhr.onload = () => {
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                let response = xhr.response;
+                console.log(response);
+            }
+            
+        }
+        let formData =  new FormData(form);
+        xhr.send(formData);
     }
 
     return (
@@ -37,7 +48,7 @@ export default function ContactMe() {
                 <h1 className="contact-section-heading">Connect with Me</h1>
             </div>
             <div className="contact">
-                <form className="contact-form-container" onSubmit = {handleSubmit}>
+                <form id="form" className="contact-form-container" onSubmit = {handleSubmit}>
                     {isAnimationTime ? (
                         <div className="contact-animation-container">
                         <Lottie
@@ -56,7 +67,7 @@ export default function ContactMe() {
                                     
                                 </div>
                             ) : (
-                                <div className="container">
+                                <div className="form-container">
                                     <label htmlFor="first-name"
                                     className="contact-label">
                                         <span className="text-md">First Name</span>
@@ -95,6 +106,7 @@ export default function ContactMe() {
                                         <span className="text-md">Message</span>
                                         <textarea
                                             className="contact-input text-md"
+                                            name="message"
                                             id="message"
                                             rows="8"
                                             //placeholder="Type your message..."

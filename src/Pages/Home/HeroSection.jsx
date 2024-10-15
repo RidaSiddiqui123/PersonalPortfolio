@@ -1,4 +1,5 @@
 
+
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
@@ -8,7 +9,8 @@ import pdf from "../../files/resume.pdf"
 
 export default function HeroSection() {
     return (
-        <section id="heroSection" className="hero-section">
+        <article className="container">
+            <section id="heroSection" className="hero-section">
             
             <div className="heroo">
                 <div className="hero-section-content-box">
@@ -76,6 +78,7 @@ export default function HeroSection() {
             
             
         </section>
+        </article>
         
         
         );
