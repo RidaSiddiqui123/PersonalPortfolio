@@ -3,6 +3,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink} from 'react-router-dom';
 import { scroller} from "react-scroll";
 import { useLocation } from 'react-router-dom';
+import "../../modern-normalize.css";
+import "../../navbar.css";
+
 
 function Navbar() {
     console.log("Navbar component mounted");
@@ -43,7 +46,7 @@ function Navbar() {
     const closeMenu = () => {
         setNavActive(false)
     }
-
+/*
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 1000) {
@@ -63,7 +66,7 @@ function Navbar() {
             closeMenu;
         }
     }, []);
-
+    */
     useEffect(() => {
         const handleScroll = () => {
 
@@ -95,8 +98,8 @@ function Navbar() {
     }, []);
 
 
-    return (
-        <nav className={`navbar ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
+
+    /*
             <div>
                 {isHomePage ? (
                             <ScrollLink
@@ -192,7 +195,18 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-        </nav>
+            */
+
+    return (
+        
+        <div className="container">
+             <nav className={`navbar ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""} `}>
+           
+           </nav>
+        </div>
+       
+      
+        
         
         
     );

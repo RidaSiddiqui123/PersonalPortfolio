@@ -1,0 +1,259 @@
+/* Hero Section Style */
+
+.hero-section {
+    display: flex;
+   
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--gradient);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 35rem;
+   
+}
+
+.heroo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  
+  
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: var(--size-base);
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero-section-img {
+    display: none;
+    justify-content: center;
+}
+
+.hero-section-img > img {
+    width: 10rem;
+    border-radius: 20px;
+    z-index: 1; 
+    
+    
+ }
+
+ .hero-section-title {
+    color: var(--primary);
+    font-size: var(--size-4xl);
+    
+    
+}
+
+.links-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.github-custom-icon {
+    color: var(--secondary);
+    font-size: 24px;
+}
+
+.github-custom-icon:hover {
+    color: var(--primary);
+}
+
+.custom-icon {
+    color: var(--secondary);
+    font-size: 28px;
+}
+
+.custom-icon:hover {
+    color: var(--primary);
+}
+
+.hero-section-description {
+    color: var(--primary);
+    font-size:var(--size-sm);
+    font-weight: 300px;
+    line-height: var(--size-2xl);
+    margin-top: 0.5rem;
+    
+    
+}
+
+.hero-section-content > a > button {
+    color: var(--primary);
+    font-size: var(--size-sm);
+    font-weight: bold;
+    background-color: var(--secondary2);
+    border: 1px solid var(--secondary2);
+    box-shadow: 0 0px 5px rgb(60, 60, 60);
+    transition: 0.3s;
+}
+
+.hero-section-content > a > button:hover {
+    color: var(--light-blue);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    
+}
+
+/*
+.hero-section-content > a > button {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--secondary2);
+    border: 1px solid var(--secondary2);
+    box-shadow: 0 0px 5px rgb(60, 60, 60);
+    transition: 0.3s;
+   =
+}
+
+.hero-section-content > a > button:hover {
+   
+   
+    
+    color: var(--light-blue);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    
+}
+
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+
+
+.hero-section {
+    display: flex;
+   
+    padding: 8.5% 19.50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    
+    background: var(--gradient);
+}
+
+.heroo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  
+  
+}
+
+
+.hero-section-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+    
+    
+}
+
+.section-title {
+    color: var(--primary);
+  
+    font-size: 21px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4px;
+    margin-bottom: -10px;
+}
+
+.hero-section-content-box > button {
+    margin-top: 21.333px;
+}
+
+.hero-section-title {
+    color: var(--primary);
+    font-size: 74.667px;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: stretch;
+    
+}
+
+.hero-section-title-color {
+    
+}
+
+
+.hero-section-description {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 25px;
+    margin-top: 10px;
+    
+}
+
+.links-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 7px;
+}
+.hero-section-img {
+    display: flex;
+    justify-content: center;
+
+    
+}
+    
+
+.hero-section-img > img {
+   width: 80%;
+   border-radius: 20px;
+   z-index: 1; 
+   
+   
+}
+*/
+/* Hero Section style ends */
