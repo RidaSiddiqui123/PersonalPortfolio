@@ -31,9 +31,9 @@
     padding-right: 11vw;
     padding-left: 11vw;
     padding-top: 3vw;
-    padding-bottom: 5vw;
+    padding-bottom: 7vw;
     display: flex;
-    height:50vw;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,10 +49,11 @@
   background-color: green;
   */
   width: 100%;
-  height: 65vh;
+ 
   gap: 100px;
   justify-content: center;
   align-items: center;
+  /* background-color:red; */
  
 
 }
@@ -73,6 +74,7 @@
     gap: 300px;
     height:inherit;
     row-gap: 32px;
+    /* background-color: green; */
     
 
 }
@@ -172,7 +174,17 @@
   
 }
 
+.animation-style {
+    width: auto;
+    height: 476.5px; /* Maintain aspect ratio */
+    
+}
 
+.placeholder-style {
+  height: 476.5px;
+  width: auto;
+  
+}
 /* Contact Section Style Ends */
 
 
@@ -182,9 +194,9 @@
         padding-right: 3vw;
         padding-left: 3vw;
         padding-top: 3vw;
-        padding-bottom: 5vw;
+        padding-bottom: 7vw;
         display: flex;
-        height:53vw;
+      
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -204,9 +216,9 @@
     padding-right: 3vw;
     padding-left: 3vw;
     padding-top: 3vw;
-    padding-bottom: 5vw;
+    padding-bottom: 7vw;
     display: flex;
-    height:61vw;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -225,9 +237,9 @@
     padding-right: 3vw;
     padding-left: 3vw;
     padding-top: 3vw;
-    padding-bottom: 5vw;
+    padding-bottom: 7vw;
     display: flex;
-    height:75vw;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -238,31 +250,11 @@
 }
 
 /* md */
-@media (max-width: 855px) {
-  .contact-section {
-    padding-right: 3vw;
-    padding-left: 3vw;
-    padding-top: 3vw;
-    padding-bottom: 5vw;
-    display: flex;
-    height:87vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 0 auto;
-    
-}
-}
-
 @media (max-width: 768px) {
   .contact-section {
-    padding-right: 3vw;
-    padding-left: 3vw;
-    padding-top: 3vw;
-    padding-bottom: 5vw;
+    
     display: flex;
-    height: 95vw;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -276,30 +268,9 @@
 @media (max-width: 640px) {
 
   .contact-section {
-    padding-right: 3vw;
-    padding-left: 3vw;
-    padding-top: 3vw;
-    padding-bottom: 5vw;
-    display: flex;
-    height: 110vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 0 auto;
     
-}
-}
-
-@media (max-width: 570px) {
-
-  .contact-section {
-    padding-right: 3vw;
-    padding-left: 3vw;
-    padding-top: 3vw;
-    padding-bottom: 5vw;
     display: flex;
-    height: 124vw;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -313,12 +284,9 @@
 @media (max-width: 475px) {
 
     .contact-section {
-        padding-right: 3vw;
-        padding-left: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 5vw;
+        
         display: flex;
-        height: 100%;
+        
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -343,7 +311,7 @@
         background-color: green;
         */
         width: 100%;
-        height: 60vh;
+        
         gap: 100px;
         justify-content: left;
         align-items: center;
@@ -364,17 +332,17 @@
 
         
     .contact-input {
-    display: flex;
-    font-family: "Roboto";
-    padding: 5px 10px;
-    align-items: left;
-    align-self: stretch;
-    width: 89vw;
-    /*border-radius: 8px;*/
-    border: 2px solid var(--light-blue);
-    background: var(--white);
-    resize: none;
-}
+      display: flex;
+      font-family: "Roboto";
+      padding: 5px 10px;
+      align-items: left;
+      align-self: stretch;
+      width: 89vw;
+      /*border-radius: 8px;*/
+      border: 2px solid var(--light-blue);
+      background: var(--white);
+      resize: none;
+    }
 
   
     .contact-form-container {
@@ -385,8 +353,6 @@
         gap: 300px;
         height:inherit;
         row-gap: 32px;
-        
-    
     }
 
     textarea {
@@ -402,7 +368,17 @@
       font-weight: 700;
       line-height: 45px;
       
-  }
+    }
+
+    .animation-style {
+      width: auto;
+      height: 454px; /* Maintain aspect ratio */
+    }
+
+    .placeholder-style {
+      height: 454px;
+      width: auto;
+    }
 }  
 
 /* xxs */
@@ -413,10 +389,7 @@
 @media (max-width: 325px) {
 
       .contact-section {
-        padding-right: 3vw;
-        padding-left: 3vw;
-        padding-top: 3vw;
-        padding-bottom: 5vw;
+       
         display: flex;
         
         flex-direction: column;
@@ -450,4 +423,15 @@
       resize: none;
     }
     
+    .animation-style {
+      width: auto;
+      height: 436px; 
+     
+    }
+
+    .placeholder-style {
+      height: 436px;
+      width: auto;
+      
+    }
 }

@@ -35,17 +35,17 @@ export default function ContactMe() {
         console.log("submitted");
         setIsAnimationTime(true);
 
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/personalPortfolio/contact.php", true);
-        xhr.onload = () => {
-            if(xhr.readyState == 4 && xhr.status == 200) {
-                let response = xhr.response;
-                console.log(response);
-            }
+        // let xhr = new XMLHttpRequest();
+        // xhr.open("POST", "/personalPortfolio/contact.php", true);
+        // xhr.onload = () => {
+        //     if(xhr.readyState == 4 && xhr.status == 200) {
+        //         let response = xhr.response;
+        //         console.log(response);
+        //     }
             
-        }
-        let formData =  new FormData(form);
-        xhr.send(formData);
+        // }
+        // let formData =  new FormData(form);
+        // xhr.send(formData);
     }
 
     return (
@@ -59,20 +59,17 @@ export default function ContactMe() {
                         {isAnimationTime ? (
                             <div className="contact-animation-container">
                                 <Lottie
+                                    className="animation-style"
                                     animationData={animationData}
                                     loop={false}
                                     autoplay={true}
-                                    style={{height: "inherit"}}
-                    
                                     onComplete={handleAnimationComplete}
                                 />                     
                             </div>
                         ) : (
                             <div>
                                 {showPlaceholder ? (
-                                    <div
-                                        style={{height: "inherit"}}>
-                                        
+                                    <div className="placeholder-style">
                                     </div>
                                 ) : (
                                     <div className="form-container">
