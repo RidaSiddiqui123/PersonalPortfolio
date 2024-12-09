@@ -9,7 +9,10 @@ import data from "../../../data/data.json";
 
 import LaunchIcon from '@mui/icons-material/Launch';
 
-
+import "../../../modern-normalize.css"
+import "../../../style.css"
+import "../../../projectPage.css"
+import "../../../utils.css"
 
 export default function projectpage() {
 
@@ -32,79 +35,76 @@ export default function projectpage() {
     }, [id]);
 
     return (
-        <section id="projectPage" className="projectPage">
-            <div className="page-container">
-                <h1 className="section-heading">{projectData.projectTitle}</h1>
-            </div>
-            <div className="project-info-container">
-                    {projectDetails.projects
-                        .filter((project) => project.id === id)
-                        .map((project, index) => (
-                        <div key={index} className="project-info-content">
-                            <p className="project-pitch">{project.pitch}</p>
-                            <div className="project-website-content">
-                                
-                                
-                                <div className="project-link-container">
-                                    {project.link ? (
-                                        <a href={project.link} className="project-icon-link" target='_blank'>
-                                            <h3 className="project-link-title">Explore Site</h3>
-                                            <LaunchIcon
-                                                sx = {{
-                                                    fontSize: 30,
-                                                    color: '#0a3c3d'
-                                                }}
-                                            />
-                                        </a>
-                                    ) : (
-                                        <div className="in-progress-label">
-                                            <Lottie
-                                                animationData={animationData}
-                                                loop={true}
-                                                style={{height: '80px', width: '80px'}}
-                                            />
-                                            <h3 className="project-link-title">Deployment in Progress</h3>    
-                                        </div> 
-                                    )
-                                    }
+        <section id="projectPage" className="container-projectPage">
+            <section className="projectPage">
+                <div className="page-container">
+                    <h1 className="section-heading">{projectData.projectTitle}</h1>
+                </div>
+                <div className="project-info-container">
+                        {projectDetails.projects
+                            .filter((project) => project.id === id)
+                            .map((project, index) => (
+                            <div key={index} className="project-info-content">
+                                <p className="project-pitch">{project.pitch}</p>
+                                <div className="project-website-content">
                                     
-                                </div>
-                                <div className="project-img">
-                                    <img src={project.image_src}></img>
-                                </div>
-                            </div>
-                            <div className="project-details-content">
-                                <div className="small-info-container">
-                                    <div className="technology-section">
-                                        <h3 className="technology-title">Technology</h3>
-                                        <ul className="technology-card-container">
-                                            {project.technologies.map((item, index) => (
-                                                <li key={index} className="technology-card">{item}</li>
-                                                
-                                                
+                                    
+                                    <div className="project-link-container">
+                                        {project.link ? (
+                                            <a href={project.link} className="project-icon-link" target='_blank'>
+                                                <h3 className="project-link-title">Explore Site</h3>
+                                                <LaunchIcon className="launch-icon"/>
+                                            </a>
+                                        ) : (
+                                            <div className="in-progress-label">
+                                                <Lottie className="in-progress-icon"
+                                                    animationData={animationData}
+                                                    loop={true}
+                                                    
+                                                />
+                                                <h3 className="project-link-title">Deployment in Progress</h3>    
+                                            </div> 
+                                        )
+                                        }
                                         
-                                            ))}
-                                        </ul>
+                                    </div>
+                                    <div className="project-img">
+                                        <img src={project.image_src}></img>
                                     </div>
                                 </div>
-                                <div className="detailed-info-container">
-                                    {project.descriptions.map((projectDescription, index) => (
-                                        <div key={index} className="descriptions-section-card">
-                                            <h1 className="project-description-title">{projectDescription.title}</h1>
-                                            <p className="project-description"
-                                            dangerouslySetInnerHTML={{ __html: projectDescription.paragraph }}
-                                            ></p>
+                                <div className="project-details-content">
+                                    <div className="small-info-container">
+                                        <div className="technology-section">
+                                            <h3 className="technology-title">Technology</h3>
+                                            <ul className="technology-card-container">
+                                                {project.technologies.map((item, index) => (
+                                                    <li key={index} className="technology-card">{item}</li>
+                                                    
+                                                    
+                                            
+                                                ))}
+                                            </ul>
                                         </div>
+                                    </div>
+                                    <div className="detailed-info-container">
+                                        {project.descriptions.map((projectDescription, index) => (
+                                            <div key={index} className="descriptions-section-card">
+                                                <h1 className="project-description-title">{projectDescription.title}</h1>
+                                                <p className="project-description"
+                                                dangerouslySetInnerHTML={{ __html: projectDescription.paragraph }}
+                                                ></p>
+                                            </div>
 
-                                    ))}
+                                        ))}
+                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
 
-                    ))}
-            </div>
-           
+                        ))}
+                </div>
+            
+            </section>
         </section>
     )
 }

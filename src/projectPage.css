@@ -1,0 +1,443 @@
+
+
+.container-projectPage {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  
+    /* border: solid 2px red; */
+  }
+
+
+  @media (max-width: 1536px) {
+    .container-projectPage {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container-projectPage {
+      width: 100%;
+    }
+  }
+
+  
+  
+  
+  /* Project Page Style Starts */
+
+  .projectPage {
+    display: flex;
+    padding: 3vw 11vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    
+    margin: 0 auto;
+  }
+    /*
+    background-color: pink;
+    */
+
+  .section-heading {
+    background: var(--gradient-heading);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    padding-bottom: 10px;
+    border-bottom: solid 4px var(--secondary);
+  }
+
+  .project-pitch {
+    font-weight: 100;
+    font-size: 18px;
+    /*color: #5f5f5f;*/
+    color: var(--light-blue);
+  }
+
+  .project-img {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+}
+
+.project-img > img {    
+    width: 100%;
+    /* added the height because of the late loading image*/
+    height: 100%;
+    border: solid 2px var(--light-blue);
+    border-radius: 10px;
+}
+
+.project-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.technology-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 5px;
+  list-style-position: inside;
+}
+
+.technology-card-container li::marker {
+  color: var(--light-blue);
+}
+
+.technology-card {
+  color: var(--light-blue);
+  font-size: 18px;
+}
+
+.project-description-title {
+    color: var(--light-blue);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.small-info-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.technology-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.project-icon-link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 7px;
+}
+
+.project-link-title {
+  color: var(--light-blue);
+}
+
+
+.technology-name {
+  font-size: 15px;
+}
+
+.technology-title {
+  color: var(--light-blue);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+
+
+.project-website-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: left;
+  justify-content: center;
+}
+
+
+.descriptions-section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detailed-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.project-description {
+  color: var(--light-blue);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300px;
+}
+
+
+.in-progress-label {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 3px;
+
+}
+
+.in-progress-icon {
+    height: 80px;
+    width: 80px;
+    
+}
+
+.launch-icon {
+    font-size: 30px !important;
+    color: var(--light-blue);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+
+    .projectPage {
+        display: flex;
+        padding: 3vw 3vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        
+        margin: 0 auto;
+      }
+}
+
+/* xl */
+/* @media (max-width: 1280px) {} */
+
+/* lg */
+/* @media (max-width: 1024px) {} */
+
+/* md */
+@media (max-width: 768px) {
+    .project-description {
+        color: var(--light-blue);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300px;
+      }
+
+    .project-description-title {
+        color: var(--light-blue);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 47px;
+    }
+
+    .technology-title {
+        color: var(--light-blue);
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 47px;
+      }
+      
+      .technology-card {
+          color: var(--light-blue);
+          font-size: 17px;
+        }
+      
+      
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .section-heading {
+        background: var(--gradient-heading);
+        background-clip: text;
+        color: transparent;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+        padding-bottom: 10px;
+        border-bottom: solid 4px var(--secondary);
+      }
+
+      .project-pitch {
+        font-weight: 100;
+        font-size: 17px;
+        /*color: #5f5f5f;*/
+        color: var(--light-blue);
+      }
+
+      .project-description {
+        color: var(--light-blue);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300px;
+      }
+
+
+    .project-description-title {
+        color: var(--light-blue);
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .technology-title {
+        color: var(--light-blue);
+          font-size: 35px;
+          font-weight: 700;
+          line-height: 40px;
+      }
+      
+      .technology-card {
+        color: var(--light-blue);
+        font-size: 17px;
+      }
+
+        .technology-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+    
+        .descriptions-section-card {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .detailed-info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+
+        .small-info-container {
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .project-info-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+          }
+}
+
+/* xs */
+@media (max-width: 475px) {
+
+    .section-heading {
+        background: var(--gradient-heading);
+        background-clip: text;
+        color: transparent;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+        padding-bottom: 10px;
+        border-bottom: solid 4px var(--secondary);
+      }
+
+      .project-pitch {
+        font-weight: 100;
+        font-size: 17px;
+        /*color: #5f5f5f;*/
+        color: var(--light-blue);
+      }
+
+      .project-description {
+        color: var(--light-blue);
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300px;
+      }
+
+
+    .project-description-title {
+        color: var(--light-blue);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .technology-title {
+        color: var(--light-blue);
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 35px;
+      }
+      
+      .technology-card {
+        color: var(--light-blue);
+        font-size: 17px;
+      }
+
+        .technology-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+    
+        .descriptions-section-card {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .detailed-info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+
+        .small-info-container {
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .project-info-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+          }
+
+        .launch-icon {
+            font-size: 23px !important;
+            color: var(--light-blue);
+        }
+
+        .in-progress-icon {
+            height: 60px;
+            width: 60px;
+            
+        }
+        .project-link-title {
+            color: var(--light-blue);
+            font-size: 15px;
+          }
+
+          .project-icon-link {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+            gap: 5px;
+          }
+    
+
+}  
+
+/* xxs */
+@media (max-width: 325px) {
+}
