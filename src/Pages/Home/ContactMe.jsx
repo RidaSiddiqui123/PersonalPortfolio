@@ -2,10 +2,10 @@ import Lottie from 'lottie-react';
 import animationData from '../../images/emailAnimation.json';
 import { useState} from 'react';
 
-import "../../modern-normalize.css"
-import "../../style.css"
-import "../../contact.css"
-import "../../utils.css"
+import "../../cssFiles/modern-normalize.css"
+import "../../cssFiles/style.css"
+import "../../cssFiles/contact.css"
+import "../../cssFiles/utils.css"
 
 export default function ContactMe() {
 

@@ -4,10 +4,10 @@ import data from "../../data/data.json";
 import image from "../../images/grad-pic.jpg";
 
 
-import "../../modern-normalize.css"
-import "../../style.css"
-import "../../skills.css"
-import "../../utils.css"
+import "../../cssFiles/modern-normalize.css"
+import "../../cssFiles/style.css"
+import "../../cssFiles/skills.css"
+import "../../cssFiles/utils.css"
 
 export default function Skills() {
     return (

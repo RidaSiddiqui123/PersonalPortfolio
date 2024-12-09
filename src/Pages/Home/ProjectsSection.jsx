@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import "../../modern-normalize.css"
-import "../../style.css"
-import "../../projects-section.css"
-import "../../utils.css"
+import "../../cssFiles/modern-normalize.css"
+import "../../cssFiles/style.css"
+import "../../cssFiles/projects-section.css"
+import "../../cssFiles/utils.css"
 
 export default function ProjectsSection() {
     const [isHovered, setIsHovered] = useState(null);

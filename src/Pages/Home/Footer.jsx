@@ -6,10 +6,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 
-import "../../modern-normalize.css"
-import "../../style.css"
-import "../../footer.css"
-import "../../utils.css"
+import "../../cssFiles/modern-normalize.css"
+import "../../cssFiles/style.css"
+import "../../cssFiles/footer.css"
+import "../../cssFiles/utils.css"
 
 function Footer() {
     return (
@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer--social--icon">
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/rida-siddiqui-cs/" className="icon-link" target='_blank'>
+                    <a href="https://github.com/RidaSiddiqui123" className="icon-link" target='_blank'>
                         <GitHubIcon
                             
                             sx={{ fontSize: 33,

@@ -9,10 +9,10 @@ import pdf from "../../files/resume.pdf";
 
 
 
-import "../../modern-normalize.css"
-import "../../style.css"
-import "../../hero-section.css"
-import "../../utils.css"
+import "../../cssFiles/modern-normalize.css"
+import "../../cssFiles/style.css"
+import "../../cssFiles/hero-section.css"
+import "../../cssFiles/utils.css"
 
 export default function HeroSection() {
     return (
@@ -32,7 +32,7 @@ export default function HeroSection() {
                             
                             
                             <div className="links-container">
-                                <a href="https://www.linkedin.com/in/rida-siddiqui-cs/" className="icon-link" target='_blank'>
+                                <a href="https://github.com/RidaSiddiqui123" className="icon-link" target='_blank'>
                                     <GitHubIcon className="github-icon icon-style"/>
                                     </a>
                                 <a href="https://www.linkedin.com/in/rida-siddiqui-cs/" className="icon-link" target='_blank'>

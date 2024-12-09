@@ -9,10 +9,10 @@ import data from "../../../data/data.json";
 
 import LaunchIcon from '@mui/icons-material/Launch';
 
-import "../../../modern-normalize.css"
-import "../../../style.css"
-import "../../../projectPage.css"
-import "../../../utils.css"
+import "../../../cssFiles/modern-normalize.css"
+import "../../../cssFiles/style.css"
+import "../../../cssFiles/projectPage.css"
+import "../../../cssFiles/utils.css"
 
 export default function projectpage() {
 
