@@ -1,6 +1,12 @@
 import Lottie from 'lottie-react';
 import animationData from '../../images/emailAnimation.json';
 import { useState} from 'react';
+
+import "../../modern-normalize.css"
+import "../../style.css"
+import "../../contact.css"
+import "../../utils.css"
+
 export default function ContactMe() {
 
 
@@ -43,89 +49,93 @@ export default function ContactMe() {
     }
 
     return (
-        <section id="contactSection" className="contact-section">
-            <div className="contact-heading-container">
-                <h1 className="contact-section-heading">Connect with Me</h1>
-            </div>
-            <div className="contact">
-                <form id="form" className="contact-form-container" onSubmit = {handleSubmit}>
-                    {isAnimationTime ? (
-                        <div className="contact-animation-container">
-                        <Lottie
-                            animationData={animationData}
-                            loop={false}
-                            autoplay={true}
-                            style={{height: '476.5px', width: '500px'}}
-                            onComplete={handleAnimationComplete}
-                        />                     
-                    </div>
-                    ) : (
-                        <div>
-                            {showPlaceholder ? (
-                                <div
-                                    style={{height: '476.5px', color: 'blue'}}>
-                                    
-                                </div>
-                            ) : (
-                                <div className="form-container">
-                                    <label htmlFor="first-name"
-                                    className="contact-label">
-                                        <span className="text-md">First Name</span>
-                                        <input 
-                                            type="text"
-                                            className="contact-input text-md"
-                                            name="first-name"
-                                            id="first-name"
-                                            //placeholder="First Name"
-                                            required/>
-                                    </label>
-                                    <label htmlFor="last-name"
-                                    className="contact-label">
-                                        <span className="text-md">Last Name</span>
-                                        <input 
-                                            type="text"
-                                            className="contact-input text-md"
-                                            name="last-name"
-                                            id="last-name"
-                                            //placeholder="Last Name"
-                                            required/>
-                                    </label>
-                                    <label htmlFor="email"
-                                    className="contact-label">
-                                        <span className="text-md">Email Address</span>
-                                        <input 
-                                            type="email"
-                                            className="contact-input text-md"
-                                            name="email"
-                                            id="email"
-                                            //placeholder="@gmail.com"
-                                            required/>
-                                    </label>
-                                    <label htmlFor="message"
-                                    className="contact-label">
-                                        <span className="text-md">Message</span>
-                                        <textarea
-                                            className="contact-input text-md"
-                                            name="message"
-                                            id="message"
-                                            rows="8"
-                                            //placeholder="Type your message..."
-                                            required/>
-                                    </label>
-                                    <div>
-                                        <button type="submit" className="btn contact-label-btn" >Submit</button>
+        <section id="contactSection" className="container-contact">
+            <section className="contact-section">
+                <div className="contact-heading-container">
+                    <h1 className="contact-section-heading">Chat with Me</h1>
+                </div>
+                <div className="contact">
+                    <form id="form" className="contact-form-container" onSubmit = {handleSubmit}>
+                        {isAnimationTime ? (
+                            <div className="contact-animation-container">
+                                <Lottie
+                                    animationData={animationData}
+                                    loop={false}
+                                    autoplay={true}
+                                    style={{height: "inherit"}}
+                    
+                                    onComplete={handleAnimationComplete}
+                                />                     
+                            </div>
+                        ) : (
+                            <div>
+                                {showPlaceholder ? (
+                                    <div
+                                        style={{height: "inherit"}}>
+                                        
                                     </div>
-                                </div>
-                            )}
-                        </div>
+                                ) : (
+                                    <div className="form-container">
+                                        <label htmlFor="first-name "
+                                        className="contact-label">
+                                            <span className="text-md">First Name</span>
+                                            <input 
+                                                type="text"
+                                                className="contact-input text-md"
+                                                name="first-name"
+                                                id="first-name"
+                                                //placeholder="First Name"
+                                                />
+                                        </label>
+                                        <label htmlFor="last-name"
+                                        className="contact-label">
+                                            <span className="text-md">Last Name</span>
+                                            <input 
+                                                type="text"
+                                                className="contact-input text-md"
+                                                name="last-name"
+                                                id="last-name"
+                                                //placeholder="Last Name"
+                                                //required
+                                                />
+                                        </label>
+                                        <label htmlFor="email"
+                                        className="contact-label">
+                                            <span className="text-md">Email Address</span>
+                                            <input 
+                                                type="email"
+                                                className="contact-input text-md"
+                                                name="email"
+                                                id="email"
+                                                //placeholder="@gmail.com"
+                                               />
+                                        </label>
+                                        <label htmlFor="message"
+                                        className="contact-label">
+                                            <span className="text-md">Message</span>
+                                            <textarea
+                                                className="contact-input text-md"
+                                                name="message"
+                                                id="message"
+                                                rows="8"
+                                                //placeholder="Type your message..."
+                                                />
+                                        </label>
+                                        <div>
+                                            <button type="submit" className="btn contact-label-btn" >Submit</button>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        
+                        )}
+                        
+                        
+                        
+                    </form>
                     
-                    )}
-                    
-                    
-                    
-                </form>
-                
-            </div>
+                </div>
+            </section>
         </section>
     )
 }

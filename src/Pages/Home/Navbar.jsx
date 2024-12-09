@@ -4,6 +4,12 @@ import { Link as RouterLink} from 'react-router-dom';
 import { scroller} from "react-scroll";
 import { useLocation } from 'react-router-dom';
 
+import "../../modern-normalize.css"
+import "../../style.css"
+import "../../navbar.css"
+import "../../utils.css"
+
+
 function Navbar() {
     console.log("Navbar component mounted");
 

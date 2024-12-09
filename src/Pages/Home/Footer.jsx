@@ -6,9 +6,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 
+import "../../modern-normalize.css"
+import "../../style.css"
+import "../../footer.css"
+import "../../utils.css"
+
 function Footer() {
     return (
-        <footer className="footer--container">
+
+    
+    <footer className="container-footer footer--container">
       <div className="footer--link--container">
         <div className="footer--social--icon">
             <ul>
@@ -54,15 +61,9 @@ function Footer() {
         </div>
         <div className="footer--items">
           
-        <p>Developed by Rida Siddiqui</p>
+            <p>Developed by Rida Siddiqui</p>
             
-    </div>
-        
-        
-        
-        
-        
-        
+        </div> 
       </div>
      
     </footer>
