@@ -64,7 +64,7 @@
         {
             "id": "3",
             "pitch": "Get personalized book recommendations for all you book lovers. Explore new favorites tailored to you!",
-            "image_src": "/images/nowplaying.png",
+            "image_src": "/images/book1.png",
             "link": "",
             "technologies": [
                 "Flask", 
