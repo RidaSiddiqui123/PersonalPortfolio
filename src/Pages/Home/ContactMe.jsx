@@ -34,7 +34,8 @@ export default function ContactMe() {
         e.preventDefault();
         
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:8888/personalPortfolio/contact.php", true);
+        const baseURL = "https://ridasiddiquipersonalportfoliocontact.onrender.com";
+        xhr.open("POST", `${baseURL}/contact.php`, true);
         xhr.onload = () => {
             if(xhr.readyState == 4 && xhr.status == 200) {
                         let response = xhr.responseText;
