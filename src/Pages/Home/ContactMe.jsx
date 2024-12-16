@@ -32,21 +32,48 @@ export default function ContactMe() {
     const handleSubmit = (e) => {
         const form = document.getElementById("form");
         e.preventDefault();
+        
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:8888/personalPortfolio/contact.php", true);
+        xhr.onload = () => {
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                        let response = xhr.responseText;
+                        console.log(response);
+                    }
+                    else {
+                        console.log("Error: " + xhr.status);
+                    }
+        };
+
+        let formData =  new FormData(form);
+
+        for (let [key, value] of formData.entries()) {
+            console.log(key, value);
+        }
+        xhr.send(formData);
+
         console.log("submitted");
         setIsAnimationTime(true);
 
+      
+        // xhr.open("POST", )
+
         // let xhr = new XMLHttpRequest();
-        // xhr.open("POST", "/personalPortfolio/contact.php", true);
+        // xhr.open("POST", "http://localhost:8888/personalPortfolio/contact.php", true);
         // xhr.onload = () => {
         //     if(xhr.readyState == 4 && xhr.status == 200) {
-        //         let response = xhr.response;
+        //         let response = xhr.responseText;
         //         console.log(response);
         //     }
+        //     else {
+        //         console.log("Error: " + xhr.status);
+        //     }
             
-        // }
+        // };
         // let formData =  new FormData(form);
+        
         // xhr.send(formData);
-    }
+    };
 
     return (
         <section id="contactSection" className="container-contact">
