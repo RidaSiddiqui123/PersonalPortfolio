@@ -75,8 +75,12 @@
     height:inherit;
     row-gap: 32px;
     /* background-color: green; */
-    
+}
 
+textarea {
+  height: calc(1.5rem * 8);
+  white-space: pre;
+  
 }
 
 .form-container {
