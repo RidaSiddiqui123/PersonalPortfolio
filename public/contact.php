@@ -20,7 +20,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
     //'C:/MAMP/htdocs/personalPortfolio/composer/vendor/autoload.php'
-    $file = __DIR__ . '/composer/vendor/autoload.php'; ;
+    $file = 'C:/MAMP/htdocs/personalPortfolio/composer/vendor/autoload.php';
 
     if (file_exists($file)) {
         echo "File exists: $file";
@@ -56,7 +56,7 @@ error_reporting(E_ALL);
     if ($first_name && $last_name && $email && $message) {
         
         // 'C:/MAMP/htdocs/personalPortfolio/composer/vendor/autoload.php'
-        require __DIR__ . '/../composer/vendor/autoload.php';
+        require 'C:/MAMP/htdocs/personalPortfolio/composer/vendor/autoload.php';
 
         $mail = new PHPMailer(true);
 
