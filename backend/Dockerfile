@@ -13,14 +13,12 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # # Set the working directory inside the container
 # WORKDIR /app
 
-# Set working directory to the root of the project (not backend/composer)
-WORKDIR /var/www/html
+
+# Set the working directory to where your composer.json file is
+WORKDIR backend/composer
 
 # Copy the project files into the container
 COPY . /var/www/html
-
-# Set the working directory to where your composer.json file is
-WORKDIR /var/www/html/backend/composer
 
 # Install PHP dependencies
 RUN composer install
