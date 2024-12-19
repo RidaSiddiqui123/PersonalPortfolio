@@ -14,7 +14,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # WORKDIR /app
 
 # Set working directory
-WORKDIR /var/www/html
+WORKDIR /var/www/html/backend/composer
 
 # Copy application files into the container
 COPY . /var/www/html
