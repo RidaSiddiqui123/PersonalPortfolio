@@ -96,7 +96,7 @@ export default function ContactMe() {
             xhr.onload = () => {
                 if(xhr.readyState == 4 && xhr.status == 200) {
                             let response = xhr.responseText;
-                            console.log(response);
+                            //console.log(response);
                         }
                         else {
                             console.log("Error: " + xhr.status);
