@@ -26,7 +26,7 @@ RUN composer install
 EXPOSE 80
 
 # Start PHP built-in server on port 80
-CMD ["php", "-S", "0.0.0.0:80", "-t", "backend"]
+CMD ["php", "-S", "0.0.0.0:80", "-t", "./"]
 
 
 
