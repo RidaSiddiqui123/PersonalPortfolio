@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6, p {
     --primary:  #f5fcfa;
     --dark-blue: #010505;
     --light-blue: #0a3c3d;
+    --white-blue: #f4ffff;
     --lighter-blue: #157072;
     --gradient: radial-gradient(circle,  #0a3c3d,#010505);
     --gradient-heading: radial-gradient(circle,  #0a3c3d,#082222);
