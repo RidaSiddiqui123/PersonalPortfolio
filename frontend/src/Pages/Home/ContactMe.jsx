@@ -17,7 +17,7 @@ export default function ContactMe() {
         setIsAnimationTime(false);
         setShowPlaceholder(true);
 
-        console.log("animation complete")
+        //console.log("animation complete")
         setTimeout(() => {
             //After 1 second the form will come back
             setShowPlaceholder(false);
@@ -104,13 +104,9 @@ export default function ContactMe() {
             };
 
             let formData =  new FormData(form);
-
-            for (let [key, value] of formData.entries()) {
-                console.log(key, value);
-            }
             xhr.send(formData);
 
-            console.log("submitted");
+            console.log("Email submitted");
             setIsAnimationTime(true);
         }
     };
