@@ -13,9 +13,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # # Set the working directory inside the container
 # WORKDIR /app
 
-WORKDIR /var/www/html/backend
+# Set working directory to /app
+WORKDIR /app
 
-COPY backend /var/www/html/backend
+# Copy all files from backend folder
+COPY . /app
 
 # Install PHP dependencies
 RUN composer install
