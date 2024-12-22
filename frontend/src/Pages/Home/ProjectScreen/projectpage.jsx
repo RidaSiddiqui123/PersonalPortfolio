@@ -7,6 +7,9 @@ import { useLocation} from 'react-router-dom';
 import projectDetails from "../../../data/projectDetails.json";
 import data from "../../../data/data.json";
 
+import { useNavigate } from 'react-router-dom';
+
+
 import LaunchIcon from '@mui/icons-material/Launch';
 
 import "../../../cssFiles/modern-normalize.css"
@@ -20,6 +23,7 @@ export default function projectpage() {
     const [projectData, setProjectData] = useState(0);
 
     const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         // Disable scroll restoration on page load or navigation
@@ -31,16 +35,15 @@ export default function projectpage() {
 
     useEffect(()=> {
         const storeId = localStorage.getItem("lastVisitedProjectId");
+        console.log("ID HERE")
+        console.log(storeId);
         const project = data.projects.find(item => item.id === parseInt(storeId));
         console.log("HERE I AM")
         console.log(project);
-        if (project) {
-            setProjectData(project);
-        }
-        else {
-            navigate("/");
+        
+        navigate(`/project/${id}`);
             
-        }
+        
         
     }, []);
 
