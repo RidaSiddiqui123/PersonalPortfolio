@@ -19,6 +19,7 @@ export default function ProjectsSection() {
 
     const routeToProjectPage = (id) => {
         navigate(`/project/${id}`);
+        
     }
 
 

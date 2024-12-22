@@ -2,7 +2,7 @@ import { useState, useEffect } from  "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink} from 'react-router-dom';
 import { scroller} from "react-scroll";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import "../../cssFiles/modern-normalize.css"
 import "../../cssFiles/style.css"
@@ -11,43 +11,44 @@ import "../../cssFiles/utils.css"
 
 
 function Navbar() {
-    console.log("Navbar component mounted");
-
-   // const [navbarColor, setNavbarColor] = useState("transparent");
-  //  const [navbarItemsColor, setNavbarItemsColor] = useState("#f5fcfa");
+    // console.log("Navbar component mounted");
     const [scrollActive, setScrollActive] = useState(false);
     const [isHomePage, setIsHomePage] = useState(false);
     const [navActive, setNavActive] = useState(false);
 
     const location = useLocation();
-    console.log('location');
-    console.log(location);
+    const navigate = useNavigate(); 
+    // console.log('location');
+    // console.log(location);
 
     const isProjectPage = location.pathname.startsWith('/project');
 
+    // This code is to make sure that the url is refreshed when going back to main page
     useEffect(() => {
         if (location.pathname === '/') {
             setIsHomePage(true);
             const sectionName = location.hash.substring(1);
-            console.log(sectionName);
-            scroller.scrollTo(sectionName, {
-                duration: 0,
-                offset: -70
-            });
+            const sectionElement = document.getElementById(sectionName);
+            if (sectionElement) {
+                scroller.scrollTo(sectionName, {
+                    duration: 0,
+                    offset: -70
+                });
+
+                navigate(location.pathname, {replace: true});
+            }
         } 
         else {
             setIsHomePage(false);
         }
-    }, [location]);
+    }, [location, navigate]);
 
-    console.log("nav active is set to:")
-    console.log(navActive)
+    //this should only happen when i press the navbar buttons
+    //other than that it shouldn't be set to anything
    
 
     const toggleNav = () => {
         setNavActive(!navActive)
-        console.log('nava ')
-        console.log(!navActive);
     }
 
     const closeMenu = () => {
