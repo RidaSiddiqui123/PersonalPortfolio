@@ -30,9 +30,10 @@ export default function projectpage() {
     }, []);
 
     useEffect(()=> {
-        const project = data.projects.find(item => item.id === parseInt(id));
+        const storeId = localStorage.getItem("lastVisitedProjectId");
+        const project = data.projects.find(item => item.id === parseInt(storeId));
         setProjectData(project);
-    }, [id]);
+    }, []);
 
     return (
         <section id="projectPage" className="container-projectPage">

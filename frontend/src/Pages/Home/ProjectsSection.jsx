@@ -18,6 +18,7 @@ export default function ProjectsSection() {
     const navigate = useNavigate();
 
     const routeToProjectPage = (id) => {
+        localStorage.setItem("lastVisitedProjectId", id);
         navigate(`/project/${id}`);
     }
 
