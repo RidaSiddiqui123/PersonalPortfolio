@@ -31,10 +31,10 @@
 
   .projectPage {
     display: flex;
-    padding-top: 3vw;
+    padding-top: 15vh;
     padding-right: 11vw;
     padding-left: 11vw;
-    padding-bottom: 10vw;
+    padding-bottom: 20vh;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -211,10 +211,10 @@
     .projectPage {
         display: flex;
         
-        padding-top: 3vw;
+        padding-top: 12vh;
         padding-right: 3vw;
         padding-left: 3vw;
-        padding-bottom: 10vw;
+        padding-bottom: 20vh;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
