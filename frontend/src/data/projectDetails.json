@@ -85,6 +85,31 @@
                     "paragraph": "I'm currently optimizing the website for full responsiveness, ensuring it adjusts smoothly across different devices. Additionally, I'm refining the overall design to enhance visual appeal and improve the user experience. I am also working on deploying the website."
                 }
             ]
+        },
+        {
+            "id": "4",
+            "pitch": "Get personalized book recommendations for all you book lovers. Explore new favorites tailored to you!",
+            "image_src": "/images/book1.png",
+            "link": "",
+            "technologies": [
+                "Flask", 
+                "Python",
+                "Pandas",
+                "Numpy",
+                "Sklearn",
+                "Bootstrap",
+                "Data Manipulation"
+            ],
+            "descriptions": [
+                {
+                    "title": "Purpose",
+                    "paragraph": "My interest in creating this website stemmed from a class I took, called Web Search and Recommender Systems. During the course, we explored how platforms like Netflix provide personalized recommendations and studied different models used in the systems. <br><br>I did some research and decided to build a website for book lovers that recommends books based on their reading history. I then developed a recommender system from scratch and integrated it into this website to enhance the user experience."
+                },
+                {
+                    "title": "Plans",
+                    "paragraph": "I'm currently optimizing the website for full responsiveness, ensuring it adjusts smoothly across different devices. Additionally, I'm refining the overall design to enhance visual appeal and improve the user experience. I am also working on deploying the website."
+                }
+            ]
         }
     ]
 }
