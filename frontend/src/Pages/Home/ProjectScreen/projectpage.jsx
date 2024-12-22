@@ -32,11 +32,14 @@ export default function projectpage() {
     useEffect(()=> {
         const storeId = localStorage.getItem("lastVisitedProjectId");
         const project = data.projects.find(item => item.id === parseInt(storeId));
+        console.log("HERE I AM")
+        console.log(project);
         if (project) {
             setProjectData(project);
         }
         else {
             navigate("/");
+            
         }
         
     }, []);
