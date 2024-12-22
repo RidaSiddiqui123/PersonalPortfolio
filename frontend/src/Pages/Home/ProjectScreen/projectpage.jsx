@@ -41,7 +41,7 @@ export default function projectpage() {
         console.log("HERE I AM")
         console.log(project);
         
-        navigate(`/project/${id}`);
+        navigate("/project/1");
             
         
         
