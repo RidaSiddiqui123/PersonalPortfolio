@@ -1,28 +1,27 @@
 
-
-/* Navbar Style Start */
 .navbar {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     padding: 0.4rem 3rem;
-    
-    background-color: black;
+
+    height: 60px;
+    background-color: transparent;
     transition: background 0.5s ease;
-    /* use this for other part when it goes to other section
-    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
-    */
-    position: fixed;
+   
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 100;
 }
 
 .navbar.scrolled {
     background: var(--gradient);
+    position: fixed;
 }
+
 
 .navbar-items > ul {
     list-style: none;
@@ -30,6 +29,7 @@
     align-items: flex-start;
     gap: 2rem;
     text-decoration: none;
+    
 }
 
 
@@ -48,17 +48,16 @@
     content: '';
     position: absolute;
     width: 0;
-    height: 0.2px; /* Thickness of the line */
+    height: 0.2px; 
     left: 0;
-    bottom:-2px; /* Position the line right under the text */
-    background-color: var(--primary); /* Color of the line */
+    bottom:-2px; 
+    background-color: var(--primary); 
     transition: 0.3s ease-in-out;
-    /*transform: scaleX(0);*/
   }
   
   .navbar-content:hover::after {
-    width: 103%; /* Full width on hover */
-    /*transform: scaleX(1);*/
+    width: 103%;
+  
   }
 
 
@@ -70,16 +69,16 @@
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
+    visibility: visible;
 }
 
 
 /* Navbar Style Ends */
 
-
-
 /*hamburger and responsive screen starts */
 
 /* Hamburger menu  */
+
 
   .nav__hamburger {
     display: none;
@@ -88,8 +87,8 @@
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 25px;
     right: 25px;
+    
   }
   
   .nav__hamburger__line {
@@ -103,21 +102,21 @@
   
   @media screen and (max-width: 768px) {
 
-   
+    .navbar-content-logo.active {
+      visibility: hidden;
+     
+    }
+
+    .navbar-content-logo.active.scrolled {
+      visibility: hidden;
+    }
+
     .nav__hamburger {
       display: flex;
+      flex-direction: column;
       z-index: 200;
     }
 
-    .navbar-items > ul {
-        list-style: none;
-        display: none;
-        align-items: flex-start;
-        gap: 2rem;
-        text-decoration: none;
-    }
-    
-/*
     .navbar-items {
       display: flex;
     }
@@ -130,9 +129,7 @@
         top: -20rem;
         left: 0;
         width: 100%;
-        
         transition: all ease-in-out 0.4s;
-       
         
       }
     
@@ -143,11 +140,13 @@
       padding: 3rem 0 0.6rem;
       z-index: -100;
     }
+    
     .navbar-items ul li {
       text-align: center;
     }
     .navbar-items ul li a {
       padding: 0.5rem;
+    
     }
     .navbar-items {
       z-index: -1000;
@@ -155,17 +154,17 @@
 
     .navbar-items.active {
       top: 0px;
+      
       background-color: var(--primary);
       
     }
+
     .navbar-items.active.scrolled {
         top: 0px;
         background-color: var(--light-blue);
         background-image: var(--gradient);
-        
-        
-        
     }
+
 
     .navbar-content.active {
         color: var(--light-blue);
@@ -185,7 +184,6 @@
         
       }
    
-
     .navbar-content.active.scrolled {
         color: var(--primary);
     }
@@ -212,7 +210,7 @@
           background-color: var(--primary);
         }
 
-        */
+      
   }
   
   /* Responsive Screens Ends */

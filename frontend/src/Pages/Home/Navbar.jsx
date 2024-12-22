@@ -38,12 +38,14 @@ function Navbar() {
         }
     }, [location]);
 
+    console.log("nav active is set to:")
+    console.log(navActive)
    
 
     const toggleNav = () => {
         setNavActive(!navActive)
         console.log('nava ')
-        console.log(navActive);
+        console.log(!navActive);
     }
 
     const closeMenu = () => {
@@ -112,13 +114,14 @@ function Navbar() {
                             offset={-70}
                             duration={500}
                             to="heroSection"
-                            className="navbar-content-logo">
+                            activeClass = " "
+                            className={`navbar-content-logo ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
                             Rida Siddiqui
                         </ScrollLink>
                         ) : (
                             <RouterLink
                                 to="/#heroSection"
-                                className="navbar-content-logo">
+                                className={`navbar-content-logo ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
                                     Rida Siddiqui
                                 </RouterLink>
                         )}
@@ -140,6 +143,7 @@ function Navbar() {
                             offset={-70}
                             duration={500}
                             to="heroSection"
+                            activeClass = " "
                             className={`navbar-content ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
                             Home
                         </ScrollLink>
@@ -162,6 +166,7 @@ function Navbar() {
                             offset={-70}
                             duration={500}
                             to="projectsSection"
+                            activeClass = " "
                             className={`navbar-content ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
                             Projects
                         </ScrollLink>
@@ -184,6 +189,7 @@ function Navbar() {
                             offset={-70}
                             duration={500}
                             to="contactSection"
+                            activeClass = " "
                             className={`navbar-content ${navActive ? "active" : ""} ${scrollActive ? "scrolled" : ""}`}>
                             Contact
                             </ScrollLink>

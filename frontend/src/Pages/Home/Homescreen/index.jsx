@@ -4,9 +4,12 @@ import ProjectsSection from "../ProjectsSection";
 import ContactMe from "../ContactMe";
 
 
+
+
 export default function Home() {
     return (
         <>
+            
             <HeroSection />
             <Skills />
             <ProjectsSection/>

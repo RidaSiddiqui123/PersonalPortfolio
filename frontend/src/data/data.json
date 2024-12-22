@@ -52,6 +52,7 @@
             "description": "Created a Flask website for book lovers to get personalized book recommendations. Utilized an item-based collaborative filtering approach, a method used by Netflix, to give users recommendations based on previous books they read.",
             "image_src": "/images/book2.png"
         }
+        
     ]
 
 }

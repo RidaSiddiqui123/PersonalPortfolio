@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <div>
-    
+          <Navbar/>
           <Routes>
             <Route path="/" element= {<Home/>}></Route>
             <Route path="/project/:id" element= {<ProjectPage/>}></Route>
