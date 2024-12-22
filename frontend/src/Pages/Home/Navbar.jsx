@@ -23,6 +23,8 @@ function Navbar() {
     console.log('location');
     console.log(location);
 
+    const isProjectPage = location.pathname.startsWith('/project');
+
     useEffect(() => {
         if (location.pathname === '/') {
             setIsHomePage(true);
@@ -73,34 +75,43 @@ function Navbar() {
     }, []);
 
     useEffect(() => {
+
+        const handlePageLoad = () => {
+            if (isProjectPage) {
+              setScrollActive(true); // Set scrollActive to true immediately for project page
+            } else if (isHomePage) {
+              setScrollActive(false); // Reset scrollActive for home page
+            }
+          };
+
+        handlePageLoad();
+        
         const handleScroll = () => {
 
-        const skillsSection = document.getElementById('skillsSection');
-        if (skillsSection != null) {
-            const sectionPosition = skillsSection.offsetTop-70;
-            if (window.scrollY >= sectionPosition) {
-                //setNavbarColor("radial-gradient(circle, #0a3c3d,#010505)");
-                //setNavbarItemsColor("radial-gradient(circle, #0a3c3d,#010505)");
-                setScrollActive(true); //change to true when past the section
-    
-            }
-            else {
-                //setNavbarColor("transparent");
-                //setNavbarItemsColor("#f5fcfa");
-                setScrollActive(false); //reset when above the section
-            }
-        }
-        else {
-            setScrollActive(true);
-        }
-    };
+            const skillsSection = document.getElementById('skillsSection');
+                if (skillsSection != null) {
+                    const sectionPosition = skillsSection.offsetTop-70;
+                    if (window.scrollY >= sectionPosition) {
+                        setScrollActive(true); //change to true when past the section
+                    }
+                    else {
+                        setScrollActive(false); //reset when above the section
+                    }
+                }
+                else {
+                    setScrollActive(true);
+                }
+        
+        };
 
     window.addEventListener('scroll', handleScroll);
-    
+
+    handleScroll();
+
     return () => {
         window.removeEventListener('scroll', handleScroll);
     };
-    }, []);
+    }, [location.pathname]);
 
 
     return (
