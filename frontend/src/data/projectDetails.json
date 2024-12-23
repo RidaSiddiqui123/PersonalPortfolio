@@ -53,7 +53,7 @@
                 },
                 {
                     "title": "Process",
-                    "paragraph": "Developed the front end using HTML, CSS, and JavaScript to design and format the user interface. Integrated the TMDB API to dynamically fetch and display the latest movie and TV show data. <br><br>Built a backend REST API with MongoDB for storing movie reviews, leveraging Express.js to simplify the creation of URL endpoints for seamless interaction between the web server and the database. Implemented full CRUD (create, read, update, and delete operations) functionality for the backend."
+                    "paragraph": "Developed the frontend using HTML, CSS, and JavaScript to design and format the user interface. Integrated the TMDB API to dynamically fetch and display the latest movie and TV show data. <br><br>Built a backend REST API with MongoDB for storing movie reviews, leveraging Express.js to simplify the creation of URL endpoints for seamless interaction between the web server and the database. Implemented full CRUD (create, read, update, and delete operations) functionality for the backend."
                 },
                 {
                     "title": "Problems and Plans",
@@ -88,26 +88,30 @@
         },
         {
             "id": "4",
-            "pitch": "Get personalized book recommendations for all you book lovers. Explore new favorites tailored to you!",
-            "image_src": "/images/book1.png",
-            "link": "",
+            "pitch": "Take a look at my portfolio to see all my interesting projects!",
+            "image_src": "/images/portfolio2.png",
+            "link": "https://ridasiddiquipersonalportfolio.onrender.com/",
             "technologies": [
-                "Flask", 
-                "Python",
-                "Pandas",
-                "Numpy",
-                "Sklearn",
-                "Bootstrap",
-                "Data Manipulation"
+                "React", 
+                "PHP",
+                "Docker",
+                "JavaScript",
+                "LottieFiles",
+                "Render",
+                "Responsive Design"
             ],
             "descriptions": [
                 {
                     "title": "Purpose",
-                    "paragraph": "My interest in creating this website stemmed from a class I took, called Web Search and Recommender Systems. During the course, we explored how platforms like Netflix provide personalized recommendations and studied different models used in the systems. <br><br>I did some research and decided to build a website for book lovers that recommends books based on their reading history. I then developed a recommender system from scratch and integrated it into this website to enhance the user experience."
+                    "paragraph": "I created this responsive website as a platform to showcase my web applications. Initially, it was a simple design, but I enhanced it by adding animated icons from LottieFiles, creating a more engaging and interactive user experience. I also implemented functionality for users to send emails directly from the webpage, making communication convenient and seamless."
                 },
                 {
-                    "title": "Plans",
-                    "paragraph": "I'm currently optimizing the website for full responsiveness, ensuring it adjusts smoothly across different devices. Additionally, I'm refining the overall design to enhance visual appeal and improve the user experience. I am also working on deploying the website."
+                    "title": "Process",
+                    "paragraph": "Developed a visually engaging frontend for the web application using React and JavaScript. Integrated LottieFiles to include dynamic animated icons, adding engaging visual elements to the website. Prioritized responsiveness in web design, ensuring optimal functionality across all screen sizes, from mobile devices to desktops.<br><br>Developed the backend, leveraging PHP, alongside the PHPMailer library to facilitate sending emails directly from the webpage. I implemented a secure and efficient system, by incorporating encryption protocols (SSL/TLS) emphasizing security and reliability, as well as ensuring proper handling of SMTP configurations and email validation. I utilized Docker to containerize the backend, to streamline deployment and maintain consistency across environments. This approach simplified dependency management, ensuring seamless deployment on various platforms, such as Render.<br><br>Finally, the backend server and the frontend were deployed using Render."
+                },
+                {
+                    "title": "Problems",
+                    "paragraph": "One challenge I faced was integrating PHP in the backend with the React frontend, especially since I had never worked with PHP before. Through much research and experimentation on a local server, I was able to overcome this learning curve. Another challenge was deploying the project to Render, and to resolve this I utilized Docker, which ultimately made the deployment process successful."
                 }
             ]
         }

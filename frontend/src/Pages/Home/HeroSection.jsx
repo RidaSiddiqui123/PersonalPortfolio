@@ -43,7 +43,7 @@ export default function HeroSection() {
                                 </a>
                             </div>
                             <a href={pdf} download="Rida Siddiqui Resume">
-                                <button className="btn btn-resume" data-download="">Download Resume/CV</button>
+                                <button className="btn btn-resume" data-download="">Download Resume</button>
                             </a>
                             <div className= "hero-section-description-container">
                                 <p className="hero-section-description">

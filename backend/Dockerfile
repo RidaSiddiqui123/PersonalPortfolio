@@ -27,24 +27,3 @@ EXPOSE 80
 
 # Start PHP built-in server on port 80
 CMD ["php", "-S", "0.0.0.0:80", "-t", "./"]
-
-
-
-# # FROM php:8.0-cli
-
-# # Install dependencies
-# RUN apt-get update && apt-get install -y \
-#     curl \
-#     unzip
-
-# # Set working directory
-# WORKDIR /var/www/html
-
-# # Copy project files
-# COPY . .
-
-# # Expose port
-# EXPOSE 10000
-
-# # Start PHP server
-# CMD ["php", "-S", "0.0.0.0:10000", "-t", "./"]

@@ -60,10 +60,10 @@
                 "PHP", 
                 "Docker", 
                 "React",
-                "Javscript"
+                "JavaScript"
             ],
-            "description": "Designed a user-oriented website to showcase all my web dev projects in an organized manner. Integrated PHPMailer to create a functional contact form. Additionally, implemented responsive design for desktop, tablets, and mobile screens.",
-            "image_src": "/images/1234.png"
+            "description": "My portfolio is what you are looking at right now. I designed it to showcase all my web dev projects in an organized manner. Integrated PHPMailer to create a functional contact form and implemented responsive design for all screens.",
+            "image_src": "/images/portfolio1.png"
         }
         
     ]
