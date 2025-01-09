@@ -37,7 +37,7 @@
             "image_src": "/images/nowplaying2.png",
             "link": "",
             "technologies": [
-                "HTML/CSS", 
+                "React", 
                 "JavaScript",
                 "Node.js",
                 "MongoDB",
@@ -53,7 +53,7 @@
                 },
                 {
                     "title": "Process",
-                    "paragraph": "Developed the frontend using HTML, CSS, and JavaScript to design and format the user interface. Integrated the TMDB API to dynamically fetch and display the latest movie and TV show data. <br><br>Built a backend REST API with MongoDB for storing movie reviews, leveraging Express.js to simplify the creation of URL endpoints for seamless interaction between the web server and the database. Implemented full CRUD (create, read, update, and delete operations) functionality for the backend."
+                    "paragraph": "Developed the frontend using React and JavaScript to design and format the user interface. Integrated the TMDB API to dynamically fetch and display the latest movie and TV show data. <br><br>Built a backend REST API with MongoDB for storing movie reviews, leveraging Express.js to simplify the creation of URL endpoints for seamless interaction between the web server and the database. Implemented full CRUD (create, read, update, and delete operations) functionality for the backend."
                 },
                 {
                     "title": "Problems and Plans",
