@@ -43,6 +43,7 @@ use PHPMailer\PHPMailer\Exception;
     
     $username = getenv('EMAIL_USERNAME');
     $password = getenv('EMAIL_PASSWORD');
+    $recipient_email = getenv('RECIPIENT_EMAIL');
 
     if ($first_name && $last_name && $email && $message) {
         
@@ -66,7 +67,7 @@ use PHPMailer\PHPMailer\Exception;
             //Recipients
         
             $mail->setFrom($email, 'Mailer');
-            $mail->addAddress('ridasiddiqui123@gmail.com', 'Contact Form');     //Add a recipient
+            $mail->addAddress($recipient_email, 'Contact Form');     //Add a recipient
             // $mail->addAddress('ellen@example.com');               //Name is optional
             $mail->addReplyTo($email);
             // $mail->addCC('cc@example.com');
