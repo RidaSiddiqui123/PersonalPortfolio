@@ -35,7 +35,7 @@ export default function Skills() {
                             I'm a passionate software developer with a love for exploring and creating user-friendly content for the web.
                             My goal is to combine my programming knowledge with my creative design skills to craft appealing but functional websites. 
                             <br></br><br></br>My interest in this field originally started in middle school when I was introduced to building a simple HTML website. 
-                            Ever since then I've been poking me head in all sorts of technologies, ulitmately bringing my back to where I started—websites!
+                            Ever since then I've been poking my head in all sorts of technologies, ulitmately bringing me back to where I started—websites!
 
                         </p>
                         
