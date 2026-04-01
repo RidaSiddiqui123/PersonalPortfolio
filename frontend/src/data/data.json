@@ -20,6 +20,18 @@
     "projects": [
         {
             "id": 1,
+            "positionTitle": "Software Engineer Intern (Frontend Focused)",
+            "projectTitle": "AI Recruiting Web App",
+            "skills": [
+                "Figma", 
+                "React", 
+                "JavaScript", 
+                "JIRA"],
+            "description": "This is an current project in the process of being launched. It's an enterprise level recruiting web app, which features a real-time dashboard. I designed the website prototypes using Figma and coded the frontend using React. Along with that, I researched recruiter workflows and tasks to design according to user experience.",
+            "image_src": "/images/recruiterapp1.png"
+        },
+        {
+            "id": 2,
             "positionTitle": "Full Stack Developer",
             "projectTitle": "Jal: Recommerce Website",
             "skills": [
@@ -31,7 +43,7 @@
             "image_src": "/images/jal1.png"
         },
         {
-            "id": 2,
+            "id": 3,
             "positionTitle": "Full Stack Developer (Personal)",
             "projectTitle": "Now Playing",
             "skills": [
@@ -43,7 +55,7 @@
             "image_src": "/images/nowplaying.png"
         },
         {
-            "id": 3,
+            "id": 4,
             "positionTitle": "Full Stack Developer (Personal)",
             "projectTitle": "Book Lover",
             "skills": [
@@ -55,7 +67,7 @@
             "image_src": "/images/book2.png"
         },
         {
-            "id": 4,
+            "id": 5,
             "positionTitle": "Full Stack Developer (Personal)",
             "projectTitle": "My Portfolio",
             "skills": [
