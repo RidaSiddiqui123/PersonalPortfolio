@@ -27,7 +27,7 @@
                 "React", 
                 "JavaScript", 
                 "JIRA"],
-            "description": "This is an current project in the process of being launched. It's an enterprise level recruiting web app, which features a real-time dashboard. I designed the website prototypes using Figma and coded the frontend using React. Along with that, I researched recruiter workflows and tasks to design according to user experience.",
+            "description": "This is a current project in the process of being launched. It's an enterprise level recruiting web app, which features a real-time dashboard. I designed the website prototypes using Figma and coded the frontend using React. Along with that, I researched recruiter workflows and tasks to design according to user experience.",
             "image_src": "/images/recruiterapp1.png"
         },
         {
