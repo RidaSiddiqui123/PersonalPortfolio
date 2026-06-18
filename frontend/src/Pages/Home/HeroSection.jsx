@@ -48,12 +48,12 @@ export default function HeroSection() {
                             <div className="downloads-container">
                                 <a href={resumePDF} download="Rida Siddiqui Resume">
                                     <button className="btn btn-resume" data-download="">Developer Resume
-                                        <DownloadIcon sx= {{fontSize: '22px'}}/>
+                                        <DownloadIcon className="download-icon-style" sx= {{fontSize: '22px'}}/>
                                     </button>
                                 </a>
                                 <a href={designPDF} download="Rida Siddiqui Design Portfolio">
                                     <button className="btn btn-resume" data-download="">Design Portfolio
-                                         <DownloadIcon sx= {{fontSize: '22px'}}/>
+                                         <DownloadIcon className="download-icon-style" sx= {{fontSize: '22px'}}/>
                                     </button>
                                 </a>
                             </div>

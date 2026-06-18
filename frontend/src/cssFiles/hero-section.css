@@ -463,14 +463,14 @@
     }
 
     .btn-resume {
-        
-        padding: 8px 15px;
-        font-size: var(--size-sm);
+        padding: 8px 5px;
+        font-size: var(--size-xs);
         font-weight: bold;
-       
-
     }
 
+    .download-icon-style {
+        font-size: 18px;
+    }
 }
 
 /* xxs */
@@ -537,10 +537,15 @@
         font-size: 31px !important;
     }
 
-    .btn-resume {
-        padding: 8px 15px;
-        font-size: var(--size-sm);
+     .btn-resume {
+        padding: 8px 3px;
+        font-size: 0.58rem;
         font-weight: bold;
     }
+
+    .download-icon-style {
+        font-size: 15px;
+    }
+
 
 }
