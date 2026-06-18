@@ -3,6 +3,8 @@
     "skills": [
         "React",
         "JavaScript",
+        "Photoshop",
+        "Illustrator",
         "HTML",
         "CSS",
         "PHP",
@@ -20,13 +22,14 @@
     "projects": [
         {
             "id": 1,
-            "positionTitle": "Software Engineer Intern (Frontend Focused)",
+            "positionTitle": "Software Engineer (Frontend Focus)",
             "projectTitle": "AI Recruiting Web App",
             "skills": [
                 "Figma", 
                 "React", 
                 "JavaScript", 
-                "JIRA"],
+                "JIRA"
+            ],
             "description": "This is a current project in the process of being launched. It's an enterprise level recruiting web app, which features a real-time dashboard. I designed the website prototypes using Figma and coded the frontend using React. Along with that, I researched recruiter workflows and tasks to design according to user experience.",
             "image_src": "/images/recruiterapp1.png"
         },
@@ -80,6 +83,45 @@
             "image_src": "/images/portfolio1.png"
         }
         
+    ],
+    "graphic_design_projects": [
+        {
+            "id": 1,
+            "industry": "Beverage Brand",
+            "projectTitle": "Fizzy Pop",
+            "skills": [
+                "Brand Identity",
+                "Packaging",
+                "Web Design"
+            ],
+            "description": "A playful soda brand built around bold, energetic visuals that reflect its fruity, fizzy personality. The identity uses funky typography and expressive design elements to capture a fun consumer experience.",  
+            "image_src": "/images/soda3.png"
+        },
+        {
+            "id": 2,
+            "industry": "Skincare Brand",
+            "projectTitle": "Barsa",
+            "skills": [
+                "Brand Strategy",
+                "Brand Identity",
+                "Packaging"
+               
+            ],
+            "description": "A minimalist skincare brand inspired by water and purity, using clean, refined visuals to express natural beauty and understated luxury. The identity is built around calm, minimal visuals and a soft, water-inspired color palette.",
+            "image_src": "/images/barsa3.png"
+        },
+        {
+            "id": 3,
+            "industry": "Baked Goods Brand",
+            "projectTitle": "Banned Brownies",
+            "skills": [
+                "Brand Strategy",
+                "Brand Identity",
+                "Social Graphics"
+            ],
+            "description": "An irresistible baked goods brand centered around a rebellious “forbidden treat” concept. Bold, attention-grabbing visuals make the product feel indulgent and unforgettable.",
+            "image_src": "/images/bannedbrownies3.png"
+        }
     ]
 
 }

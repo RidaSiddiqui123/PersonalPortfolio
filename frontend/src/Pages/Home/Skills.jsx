@@ -1,7 +1,7 @@
 
 import data from "../../data/data.json";
 
-import image from "../../images/grad-pic.jpg";
+import image from "../../images/profilePicture2.jpg";
 
 
 import "../../cssFiles/modern-normalize.css"
@@ -30,13 +30,14 @@ export default function Skills() {
                             
                         </div>
                         <p className="background-description">
-                            I recently graduated from <strong><mark style={{backgroundColor: '#fac089', color: '#0a3c3d'}}>California State Polytechnic University Pomona</mark></strong> with 
-                            a Bachelor of Science in Computer Science.
-                            I'm a passionate software developer with a love for exploring and creating user-friendly content for the web.
-                            My goal is to combine my programming knowledge with my creative design skills to craft appealing but functional websites. 
-                            <br></br><br></br>My interest in this field originally started in middle school when I was introduced to building a simple HTML website. 
-                            Ever since then I've been poking my head in all sorts of technologies, ulitmately bringing me back to where I started—websites!
+                            I obtained my <strong><mark style={{backgroundColor: '#fac089', color: '#0a3c3d'}}>Bachelor's in Computer Science</mark></strong> from California State Polytechnic University, Pomona. 
+                            I’m a passionate software developer working across web development, UI/UX, and graphic design, with a focus on building user-friendly and visually engaging experiences. 
 
+                            <br></br><br></br>
+                            My interest in this field originally began in middle school when I built my first HTML website. 
+                            Ever since then, I’ve continued exploring different areas of technology and growing my skills, bringing me to where I am today!
+
+                          
                         </p>
                         
                     </div>

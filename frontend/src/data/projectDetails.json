@@ -12,12 +12,13 @@
                 "User Experience",
                 "JavaScript",
                 "Node.js",
+                "JIRA",
                 "Responsive Design"
             ],
             "descriptions": [
                 {
                     "title": "Purpose",
-                    "paragraph": "This is a project that I am working on as a Software Engineer Intern at Elite Innovative Solutions. It is a product that will be used to help recruiters find the best candidate for the job."
+                    "paragraph": "This is a project that I am working on as a Software Engineer at Elite Innovative Solutions. It is a product that will be used to help recruiters find the best candidate for the job."
                 }
             ]
         },

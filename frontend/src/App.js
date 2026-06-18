@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Homescreen";
 import Navbar from "./Pages/Home/Navbar";
 import ProjectPage from "./Pages/Home/ProjectScreen/projectpage";
+import GraphicDesignPage from "./Pages/Home/ProjectScreen/graphicDesignPage";
 import Footer from "./Pages/Home/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element= {<Home/>}></Route>
             <Route path="/project/:id" element= {<ProjectPage/>}></Route>
+            <Route path="/graphic_design/:id" element= {<GraphicDesignPage/>}></Route>
             <Route path="*" element = {<div>404 Not Found</div>}></Route>
           </Routes>
           <Footer/>

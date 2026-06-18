@@ -1,0 +1,65 @@
+{
+    "projects": [
+        
+        {
+            "id": "1",
+            "pitch": "A playful soda brand built around bold, energetic visuals that reflect its fruity, fizzy personality.",
+            "image_src": "/images/soda2.png",
+            "link": "",
+            "services": [
+               "Brand Identity", 
+                "Packaging",
+                "Web Design"
+            ],
+            "descriptions": [
+                {
+                    "title": "Project Goal",
+                    "paragraph": "To create a bold and energetic soda brand that stands out in a saturated beverage market through vibrant visuals and playful branding inspired by its fizzy, punchy flavors." },
+                 {
+                    "title": "Design Decisions",
+                    "paragraph": "The “i” in Fizzy Pop was redesigned as a soda can with fizzy bubbles, creating a strong visual link to the product. A fun, expressive typography was used to reinforce the playful and energetic tone of the brand. Bold and vibrant colors were used across the logo and packaging to reflect the brand’s fruity flavour profiles."} ]
+        },
+
+        
+        {
+            "id": "2",
+            "pitch": "A minimalist skincare brand inspired by water and purity, using clean, refined visuals to express natural beauty and understated luxury.",
+            "image_src": "/images/barsa2.png",
+            "link": "https://jarrv.onrender.com",
+            "services": [
+                "Brand Strategy", 
+                "Brand Identity",
+                "Packaging"
+            ],
+            "descriptions": [
+                {
+                    "title": "Project Goal",
+                    "paragraph": "A minimalist and natural skincare brand that embodies the philosophy of purity and natural beauty through clean, refined branding and a luxury feel."   },
+                {
+                    "title": "Design Decisions",
+                    "paragraph": "Barsa, means “rain”. A water droplet motif was used to represent this and reinforce the concept of purity. Muted blues and whites creates a minimal color palette inspired by natural water tones. Elegant typeface was chosen to balance the minimal visuals, supporting the brand’s elevated skincare identity."} ]
+        },
+        {
+            "id": "3",
+            "pitch": "An irresistible baked goods brand centered around a rebellious “forbidden treat” concept.",
+            "image_src": "/images/bannedbrownies2.png",
+            "link": "",
+            "services": [
+                "Brand Strategy", 
+                "Brand Identity",
+                "Social Graphics",
+                "Packaging"
+            ],
+            "descriptions": [
+                {
+                    "title": "Project Goal",
+                    "paragraph": "An irresistible baked goods brand that stands out through bold, playful, eye-catching branding and a memorable identity built around the name Banned Brownies."},
+                {
+                    "title": "Design Decisions",
+                    "paragraph": "A stylized \"banned\" stamp was used for the logo to give the feel of something officially prohibited, reinforcing the brand's playful “forbidden treat” concept. A palette of pink and brown evokes the warmth of baked goods, while red adds a bold pop, emphasizing the fun, rebellious personality."}
+               
+            ]
+        }
+       
+    ]
+}
