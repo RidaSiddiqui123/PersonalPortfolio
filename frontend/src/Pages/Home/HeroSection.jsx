@@ -4,19 +4,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import DownloadIcon from '@mui/icons-material/Download';
-import SouthIcon from '@mui/icons-material/South';
-import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-
-import SaveAltIcon from '@mui/icons-material/SaveAlt';
 
 import image from "../../images/robot.png";
 import resumePDF from "../../files/resume.pdf";
 import designPDF from "../../files/designPortfolio.pdf"
 
-import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+
 
 
 import "../../cssFiles/modern-normalize.css"
