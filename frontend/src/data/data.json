@@ -23,14 +23,14 @@
         {
             "id": 1,
             "positionTitle": "Software Engineer (Frontend Focus)",
-            "projectTitle": "AI Recruiting Web App",
+            "projectTitle": "AI Recruiting Platform",
             "skills": [
                 "Figma", 
                 "React", 
                 "JavaScript", 
                 "JIRA"
             ],
-            "description": "This is a current project in the process of being launched. It's an enterprise level recruiting web app, which features a real-time dashboard. I designed the website prototypes using Figma and coded the frontend using React. Along with that, I researched recruiter workflows and tasks to design according to user experience.",
+            "description": "An AI recruiting platform currently being developed at Elite Innovative Solutions. I designed the UI in Figma and built the frontend in React, translating recruiter workflows into intuitive interfaces, dashboards, and AI-powered recruiting features. ",
             "image_src": "/images/recruiterapp1.png"
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "id": 3,
-            "positionTitle": "Full Stack Developer (Personal)",
+            "positionTitle": "Full Stack Developer",
             "projectTitle": "Now Playing",
             "skills": [
                 "MongoDB", 
@@ -59,7 +59,7 @@
         },
         {
             "id": 4,
-            "positionTitle": "Full Stack Developer (Personal)",
+            "positionTitle": "Full Stack Developer",
             "projectTitle": "Book Lover",
             "skills": [
                 "Python", 
@@ -71,7 +71,7 @@
         },
         {
             "id": 5,
-            "positionTitle": "Full Stack Developer (Personal)",
+            "positionTitle": "Full Stack Developer",
             "projectTitle": "My Portfolio",
             "skills": [
                 "PHP", 

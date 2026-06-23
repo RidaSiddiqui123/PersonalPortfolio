@@ -3,7 +3,7 @@
         
         {
             "id": "1",
-            "pitch": "An AI recruiting web app that helps you find the best candidate for your company's needs.",
+            "pitch": "An AI recruiting platform that helps you find the best candidate for your company's needs.",
             "image_src": "/images/recruiterapp2.png",
             "link": "",
             "technologies": [
@@ -11,6 +11,7 @@
                 "Figma",
                 "User Experience",
                 "JavaScript",
+                "HTML/CSS",
                 "Node.js",
                 "JIRA",
                 "Responsive Design"
@@ -18,7 +19,15 @@
             "descriptions": [
                 {
                     "title": "Purpose",
-                    "paragraph": "This is a project that I am working on as a Software Engineer at Elite Innovative Solutions. It is a product that will be used to help recruiters find the best candidate for the job."
+                    "paragraph": "This AI Recruiting platform is designed to streamline the entire hiring lifecycle. The goal is to centralize recruiting workflows into a single platform and reduce the manual work recruiters traditionally perform through AI and automation. It uses AI to assist with tasks, such as sourcing and screening candidates, interviewing, and communication, while providing recruiters with dashboards and analytics to track hiring activity and make informed decisions."  
+                },
+                {
+                    "title": "Process",
+                    "paragraph": "The project began with understanding recruiter workflows, business requirements, and pain points through discussions with recruiters and the team. Based on these insights, I designed and iterated on prototypes in Figma, refining workflows and interfaces through feedback and usability testing. I then implemented the frontend using React.js, JavaScript, and Bootstrap, integrating backend APIs connected to Cloud SQL, while collaborating closely with backend engineers. I developed key features, including an analytics dashboard with KPI visualizations, search and filtering tools, calendar functionality, and an AI chat interface. As the platform evolved, I continuously refined features and expanded functionality based on user feedback while maintaining a scalable and reusable component architecture."
+                },
+                {
+                    "title": "Problems",
+                    "paragraph": "One of the biggest challenges was translating complex recruiting workflows into an interface that was both visually appealing and genuinely useful for day-to-day work. Additionally, recruiter needs often evolved as they interacted with the platform, leading to new requirements and workflow improvements throughout development. To address this, I conducted usability testing sessions, observed, and gathered feedback, and continuously refined the user experience."
                 }
             ]
         },
